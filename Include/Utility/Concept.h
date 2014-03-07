@@ -39,7 +39,7 @@ namespace Concept
   // Machinery used to disable functions based on requirements on types ( Concepts-like )
   //
   // Usage:
-  //   tempalte< typename T, Requires< POD< T > >... > void Foo( T val );
+  //   template< typename T, Concept::Requires< Concept::POD< T > >... > void Foo( T val );
   //
   // Technique described by R. Matrinho Fernandes:
   //   http://flamingdangerzone.com/cxx11/2012/06/01/almost-static-if.html
