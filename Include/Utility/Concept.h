@@ -23,6 +23,10 @@ namespace Concept
   // ( ( A::value && B::value && C::value && ... ) == true  ) => Inherits from std::true_type
   // ( ( A::value && B::value && C::value && ... ) == false ) => Inherits from std::false_type
   template< typename A, typename... Bs > struct All;
+  
+  // ( ( A::value || B::value || C::value || ... ) == true  ) => Inherits from std::true_type
+  // ( ( A::value || B::value || C::value || ... ) == false ) => Inherits from std::false_type
+  template< typename A, typename... Bs > struct Any;
 
   // ( A::value == false ) => Inherits from std::true_type
   // ( A::value == true  ) => Inherits from std::false_type
