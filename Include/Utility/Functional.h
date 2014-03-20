@@ -31,7 +31,7 @@ namespace Functor
     {
       return std::forward< T >( lhs ) + std::forward< U >( rhs ); 
     }
-  }
+  };
   constexpr Add_t Add{};
 
   struct Subtract_t
@@ -41,7 +41,7 @@ namespace Functor
     {
       return std::forward< T >( lhs ) - std::forward< U >( rhs ); 
     }
-  }
+  };
   constexpr Subtract_t Subtract{};
 }
 
